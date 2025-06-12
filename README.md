@@ -1,5 +1,9 @@
 # Comp8420_Major_Project
 
+## NOTE:
+Saved Sentiment Model can be downloaded through this link: https://drive.google.com/drive/folders/1vaFjqOxMEOlRU22Cg8MwOPaNwFI2PoTo?usp=sharing
+save the folder best_sentiment_modelv4 in the same folder of all the files below.
+
 ---
 ## Files
 
@@ -13,6 +17,8 @@ toxic_detection.py - toxic comments filter function
 gemini_utils.py - ask_gemini() function handling sentiment-based prompts
 Chatbot.py - Terminal-based chatbot interface
 main.py - Streamlit frontend for running the chatbot
+
+
 ---
 
 ## Features
