@@ -3,6 +3,7 @@
 ---
 ## Files
 
+Restaurant reviews.csv - dataset
 restaurant_review_notebook.ipynb - Training, evaluation, confusion matrix & model saving
 analyze_review.py - NER, Lime and Sentiment Prediction function is stored in this file
 Review_log.py - function that saves the customer review, sentiment and NER into .csv file for the management use is inside this file
