@@ -3,8 +3,12 @@
 ---
 ## Files
 
-restaurant_review.ipynb - Training, evaluation, confusion matrix & model saving
+restaurant_review_notebook.ipynb - Training, evaluation, confusion matrix & model saving
+analyze_review.py - NER, Lime and Sentiment Prediction function is stored in this file
+Review_log.py - function that saves the customer review, sentiment and NER into .csv file for the management use is inside this file
 sentiment.py - predict_sentiment() function using trained DistilBERT
+spam_detection.py - spam filter function
+toxic_detection.py - toxic comments filter function
 gemini_utils.py - ask_gemini() function handling sentiment-based prompts
 Chatbot.py - Terminal-based chatbot interface
 main.py - Streamlit frontend for running the chatbot
@@ -12,6 +16,8 @@ main.py - Streamlit frontend for running the chatbot
 
 ## Features
 
+- Filters toxic and spam messages
+- saves customer review, sentiment and NER for management review purposes
 - Classifies sentiment as **Positive**, **Neutral**, or **Negative**
 - Chatbot generates LLM-based personalized replies
 - Offers automatic discount codes depending on feedback sentiment
@@ -30,15 +36,15 @@ streamlit run main.py
 
 ## Model Performance
 
-| Metric     | Score   |
-|------------|---------|
-| Accuracy   | 78.76%  |
-| Precision  | 78.40%  |
-| Recall     | 78.76%  |
-| F1 Score   | 78.46%  |
-
-- Strong performance on positive/negative reviews
-- Minor confusion with **neutral** class (can be improved with more balanced data)
+{'eval_loss': 1.0697822570800781,
+ 'eval_accuracy': 0.8433734939759037,
+ 'eval_precision': 0.8468368666975595,
+ 'eval_recall': 0.8433734939759037,
+ 'eval_f1': 0.844767714337081,
+ 'eval_runtime': 75.6384,
+ 'eval_samples_per_second': 13.168,
+ 'eval_steps_per_second': 0.833,
+ 'epoch': 10.0}
 
 ---
 
