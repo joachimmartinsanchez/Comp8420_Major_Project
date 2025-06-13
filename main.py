@@ -32,7 +32,7 @@ if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
 # UI
-st.title("🍽️ Restaurant Receptionist Chatbot")
+st.title("🍽️ RESTOBOT: AI Receptionist")
 st.header("We are interested to hear your feedback!")
 
 # Input form
