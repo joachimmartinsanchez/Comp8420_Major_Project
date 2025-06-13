@@ -13,8 +13,8 @@ from gemini_utils import ask_gemini
 os.environ["STREAMLIT_FILE_WATCHER_TYPE"] = "none"
 
 # Load sentiment model
-tokenizer = AutoTokenizer.from_pretrained("./restaurant_sentiment_model")
-sysmodel = AutoModelForSequenceClassification.from_pretrained("./restaurant_sentiment_model")
+tokenizer = AutoTokenizer.from_pretrained("./best_sentiment_modelv4")
+sysmodel = AutoModelForSequenceClassification.from_pretrained("./best_sentiment_modelv4")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 sysmodel = sysmodel.to(device)
 
